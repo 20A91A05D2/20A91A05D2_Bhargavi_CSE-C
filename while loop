@@ -1,0 +1,13 @@
+start=int(input('enter start value'))
+end=int(input('enter end value'))
+step=int(input('enter step value'))
+while start<=end:
+    print(start)
+    start=start+step
+'''OUTPUT
+enter start value3
+enter end value8
+enter step value2
+3
+5
+7 ''''
