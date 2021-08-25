@@ -1,0 +1,11 @@
+def Sum_of_digits(n):
+    sum_digits= 0
+    for i in str(n): 
+      sum_digits+= int(i)      
+    return sum_digits
+n=int(input("enter a number"))
+print(Sum_of_digits(n))
+
+OUTPUT:
+enter a number15632
+17
