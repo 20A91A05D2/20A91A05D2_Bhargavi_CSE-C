@@ -1,0 +1,16 @@
+l=[]
+n=int(input("enter no of element:"))
+for i in range(n):
+    ele=int(input())
+    l.append(ele)
+s=set(l)
+list1=list(s)
+print(list1)
+OUTPUT:
+enter no of element:5
+1
+2
+1
+2
+5
+[1, 2, 5]
