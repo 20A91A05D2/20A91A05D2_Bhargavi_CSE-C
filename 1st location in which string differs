@@ -1,0 +1,21 @@
+def first_diff(s1,s2):
+    if len(s1)>len(s2):
+        c=len(s1)
+    else:
+        c=len(s2)
+    for i in range(c):
+        if s1[i]!=s2[i]:
+            return i
+        if i==c-1:
+            if s1[i]!=s2[i]:
+                return i
+            else:
+                return -1
+s1=input("enter first string:")
+s2=input("enter second string:")
+print(first_diff(s1,s2))
+
+OUTPUT:
+enter first string:he brought a book
+enter second string:he brought book
+11
