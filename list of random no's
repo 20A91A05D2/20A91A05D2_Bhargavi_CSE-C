@@ -1,0 +1,28 @@
+import random
+list=[]
+for i in range(1,21):
+r=random.randint(1,100)
+list.append(r)
+print(list)
+avg=sum(list)/len(list)
+print(&quot;average=%f&quot;%(avg))
+print(&quot;largest number is:%d&quot;%max(list))
+print(&quot;smallest number is:%d&quot;%min(list))
+list.sort()
+print(list)
+print(&quot;second largestis %d&quot;%list[-2])
+print(&quot;second smallest is %d&quot;%list[2])
+even_list=[]
+for i in list:
+if i%2==0:
+even_list.append(i)
+print(“even numbers list is:”,even_list)
+OUTPUT:
+[29, 100, 54, 6, 37, 21, 79, 47, 99, 72, 81, 22, 68, 3, 73, 19, 21, 73, 15, 66]
+average=49.250000
+largest number is:100
+smallest number is:3
+[3, 6, 15, 19, 21, 21, 22, 29, 37, 47, 54, 66, 68, 72, 73, 73, 79, 81, 99, 100]
+second largestis 99
+second smallest is 15
+even numbers list is:[6, 22, 54, 66, 68, 72, 100]
