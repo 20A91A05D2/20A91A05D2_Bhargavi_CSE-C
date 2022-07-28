@@ -10,6 +10,7 @@ result=66+2112
 '''
 
 Program:
+  Without Using recursion:
   def fun(a,b):
     res=0
     while a>=1:
@@ -23,6 +24,17 @@ Program:
 a,b=map(int,input().split())
 res=fun(a,b)
 print(res)
+
+Using Recursion:
+  def fun(a,b):
+    if a==1:
+        return b
+    if a%2!=0:
+        return b+fun(a//2,b*2)
+    else:
+        return fun(a//2,b*2)
+a,b=map(int,input().split())
+print(fun(a,b))
 
 
 Output:
